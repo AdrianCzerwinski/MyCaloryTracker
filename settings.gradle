@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MyCaloryTracker"
 include ':app'
+include ':core'
