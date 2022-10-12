@@ -3,6 +3,7 @@ package com.example.core.domain.preferences
 import com.example.core.domain.model.ActivityLevel
 import com.example.core.domain.model.Gender
 import com.example.core.domain.model.GoalType
+import com.example.core.domain.model.UserInfo
 
 interface Preferences {
     fun saveGender(gender: Gender)
@@ -15,7 +16,7 @@ interface Preferences {
     fun saveProteinRatio(ratio: Float)
     fun saveFatRatio(ratio: Float)
 
-    fun loadUserInfo()
+    fun loadUserInfo(): UserInfo
 
     companion object {
         const val KEY_GENDER = "gender"
